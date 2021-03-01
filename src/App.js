@@ -1,22 +1,17 @@
 import './App.css';
+import React from 'react';
+import Nav from './Components/Nav/index';
+import Landing from './Components/Landing/index';
+import Footer from './Components/Footer/index';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        {/* <img src={logo} className="App-logo" alt="logo" /> */}
-        <p>
-         Welcome to my website!
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Click Me
-        </a>
-      </header>
+      <Nav></Nav>
+      <main className="App-main">
+        <Landing></Landing>
+      </main>
+      <Footer></Footer>
     </div>
   );
 }
